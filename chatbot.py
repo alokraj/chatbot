@@ -33,8 +33,8 @@ if file is not None:
         length_function=len
     )
     chunks = text_splitter.split_text(text)
-    # st.write(":::::::::::::::::::: CHUNKS :::::::::::::::::::::::::::::")
-    # st.write(chunks)
+    st.write(":::::::::::::::::::: CHUNKS :::::::::::::::::::::::::::::")
+    st.write(chunks)
 
 
     # generating embedding
@@ -54,10 +54,10 @@ if file is not None:
         # it simply retrieves the closest matches based on vector similarity,
         # even if the matches are not semantically meaningful. If the uploaded document has no content
         # related to the query, the "closest" match might still be quite different from the query.
-        #st.write("::::::::::::::::::::::::::::::::: MATCH :::::::::::::::::::::::")
-        #st.write(match)
-        #st.write("Top matches:")
-        #for doc in match:
+        st.write("::::::::::::::::::::::::::::::::: MATCH :::::::::::::::::::::::")
+        st.write(match)
+        st.write("Top matches:")
+        for doc in match:
             #st.write(':::::::::::::',doc.page_content)
 
         #define the LLM
