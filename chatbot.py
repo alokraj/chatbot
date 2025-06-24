@@ -58,7 +58,7 @@ if file is not None:
         st.write(match)
         st.write("Top matches:")
         for doc in match:
-            #st.write(':::::::::::::',doc.page_content)
+            st.write(':::::::::::::',doc.page_content)
 
         #define the LLM
         llm = ChatOpenAI(
